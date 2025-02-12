@@ -9,8 +9,8 @@ def pdf_to_base64( path : str):
 
     base64_images = []
 
-    for page in doc:
-        pic = doc[page].get_pixmap()
+    for page_num , page in enumerate(doc):
+        pic = page.get_pixmap()
         img = Image.frombytes("RGB" , [pic.width , pic.height] , pic.samples)
 
         buffered = BytesIO()
@@ -23,3 +23,7 @@ def pdf_to_base64( path : str):
     return base64_images
 
 pdf_path = "sample1.pdf"
+
+base64_images = pdf_to_base64(pdf_path)
+
+print (base64_images)
