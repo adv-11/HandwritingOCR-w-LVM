@@ -3,7 +3,7 @@ import base64
 from io import BytesIO
 from PIL import Image
 
-def pdf_to_base64( path : str):
+def pdf_to_base64_pymupdf( path : str):
 
     doc = fitz.open(path)
 
@@ -24,6 +24,6 @@ def pdf_to_base64( path : str):
 
 pdf_path = "sample1.pdf"
 
-base64_images = pdf_to_base64(pdf_path)
+base64_images = pdf_to_base64_pymupdf(pdf_path)
 
-print (base64_images)
+# print (base64_images)

@@ -1,0 +1,53 @@
+### BCT
+
+#### CSE 3
+
+#### 1. State the applications of blockchain and show how Swarm can be used for decentralized storage within an example in the context of ethereum.
+
+**Applications of blockchain:**
+
+i) **Cryptocurrencies** = Cryptocurrencies like Bitcoin and Ethereum use blockchain as a decentralized ledger for recording transactions.
+
+ii) **Smart Contracts** = On platforms like Ethereum, blockchain enables programmable contracts that automatically execute once certain conditions are met, reducing the need for intermediaries.
+
+iii) **Supply Chain Management** = Blockchain provides a transparent and traceable system for recording every stage in the supply chain.
+
+**How Swarm Works**
+
+Swarm divides data into smaller chunks and distributes them across various nodes in the network. Each node in the network stores a small piece of data and helps retrieve it by connecting with other nodes to access or share data. Swarm uses hashes to identify & locate each chunk across the network.
+
+**Fig:** - Imagine you want to store and retrieve data on Swarm for an Ethereum-based decentralized application (dApp). Here is how you might do it:
+
+1. **Prepare the data:** Suppose you have a file or document you want to store first; you split it into smaller chunks that will be distributed across the network.
+2) Upload to Swarm = You use Swarm's API or a command line tool to upload your file. Swarm then generates a unique hash representing the file.
+3) Store the Hash on Ethereum = Instead of storing the actual data on the Ethereum blockchain, you can store the file's Swarm hash in a smart contract.
+4) Retrieving the Data = To retrieve the file, you query the smart contract for the Swarm hash, which you can then use with API.
+
+5) Demonstrate how blockchain can be integrated with IoT devices to ensure data security and interoperability. Illustrate this with a use case and practical scena.
+2) Upload to Swarm = You use Swarm's API or a command line tool to upload your file. Swarm then generates a unique hash representing the file.
+3) Store the Hash on Ethereum = Instead of storing the actual data on the Ethereum blockchain, you can store the file's Swarm hash in a smart contract.
+4) Retrieving the Data = To retrieve the file, you query the smart contract for the Swarm hash, which you can then use with API.
+
+5) Demonstrate how blockchain can be integrated with IoT devices to ensure data security and interoperability. Illustrate this with a use case and practical scenario.
+
+i) Data security = Blockchain's immutable ledger ensures that data collected from IoT devices is securely stored, unalterable, and auditable. Each transaction or piece of data recorded on the blockchain is time stamped.
+
+ii) Interoperability = Blockchain provides a standardized framework that enables different IoT devices to communicate effectively. By setting predefined standards and protocols on the blockchain, devices from different vendors can interact seamlessly.
+
+Use case: Smart City Energy And
+Here how blockchain can be integrated.
+### 1) Data Collection and Recording:
+
+- Every energy meter in households or commercial buildings has an IoT device that records energy usage. The immutable ledger ensures that no entity can tamper with usage data, which is critical for accurate billing.
+
+### 2) Distributed Energy Trading:
+
+- Through smart contracts on the blockchain, individual homes equipped with solar panels can sell excess energy back to the grid or to neighbours. When excess memory is available, a smart contract executes automatically, updating recording and processing payments.
+
+### 3) Interoperability Between Devices:
+
+- Since smart meters, solar panels, and other IoT devices now come from different manufacturers, blockchain provides a unified protocol for these devices to interact without compatibility issues.
+
+### 4) Enhanced Security and Auditability:
+
+- Any data recorded on the blockchain remains traceable and auditable. This reduces fraud, ensures data accuracy, and builds trust in the Smart City's energy grid. Audits can verify the actual energy generated and consumed by each unit, improving accountability for energy providers and users.
