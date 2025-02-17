@@ -10,10 +10,10 @@ import os
 from dotenv import load_dotenv
 from mistralai import Mistral
 
-
 load_dotenv()
-#optional backup encoding for single image
 
+
+#optional backup encoding for single image
 
 # def encode_image(image_path):
 #     """Encode the image to base64."""
@@ -48,8 +48,13 @@ for image in base64_images:
             "role":"user",
             "content": [
 
-                {"type": "text", "text": "Extract the Handwritten text in the given image"},
-                {"type": "image_url", "image_url": f"data:image/png;base64,{image}"}
+                {
+                    "type": "text", "text": "Extract the Handwritten text in the given image"
+                    
+                },
+                {
+                    "type": "image_url", "image_url": f"data:image/png;base64,{image}"
+                }
             ]
 
         }
